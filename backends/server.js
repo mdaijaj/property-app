@@ -13,6 +13,10 @@ app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 
 
+app.get("/", (req, res)=>{
+console.log("welcome to property app")
+return res.send({message: "welcome to property app"});
+})
 
 let routes=require('./routes/index')
 app.use('/', routes);

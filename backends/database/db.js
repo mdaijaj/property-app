@@ -3,7 +3,7 @@ const mongoose=require('mongoose');
 // dotenv.config({path: './db.js'})
 // let url="mongodb://localhost:27017/property" ;
 
-mongoose.connect(process.env.DB|| url, {
+mongoose.connect(process.env.DB, {
     useUnifiedTopology: true,
     useNewUrlParser:true,
 }).then(()=>{
